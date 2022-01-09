@@ -1,0 +1,50 @@
+@import "base.less";
+@import "palette.less";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css");
+
+*:not(i) {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif !important;
+}
+
+body {
+    background: @background;
+    color     : #fff;
+}
+
+a {
+    font-family    : "Noto Sans KR", sans-serif;
+    text-decoration: inherit;
+    color          : inherit;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.number-with-commas {
+    >span {
+        color    : #666;
+        font-size: 0.8em;
+    }
+}
+
+::-webkit-scrollbar {
+    width : 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+    background   : #666;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+// views
+@import "view/home.less";
